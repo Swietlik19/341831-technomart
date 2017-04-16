@@ -2,11 +2,252 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
+    <title>Техномарт</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <div class="main-header-top">
+        <div class="container">
+          <a class="logo">Техномарт</a>
+          <form class="main-header-form" action="https://echo.htmlacademy.ru" method="post">
+            <label>Поиск: <input type="text" name="search" id="search-id"></label>
+            <label>Закладки: <input type="text" name="bookmarks" id="bookmarks-id"></label>
+            <label>Корзина: <input type="text" name="cart" id="cart-id"></label>
+          </form>
+          <a class="btn order-btn" href="#">Оформить заказ</a>
+        </div>
+      </div>
+      <div>
+        <div class="container">
+          <p class="main-header-about">Интернет-магазин строительных материалов и&nbsp;инструментов для&nbsp;ремонта</p>
+          <section class="main-header-contacts">
+            <p class="main-header-phone">+7&nbsp;(812)&nbsp;555-05-55</p>
+            <p class="main-header-address">г. Санкт-Петербург, ул.&nbsp;Б.&nbsp;Конюшенная, д.&nbsp;19/8</p>
+          </section>
+          <section class="user-block">
+            <a class="sign-in" href="#">Вход</a>
+            <a class="sign-up" href="#">Регистрация</a>
+          </section>
+          <nav class="main-navigation">
+            <ul>
+              <li>
+                <a>Главная</a>
+              </li>
+              <li>
+                <a href="#">Компания</a>
+              </li>
+              <li>
+                <a href="#">Каталог</a>
+              </li>
+              <li>
+                <a href="#">Новости</a>
+              </li>
+              <li>
+                <a href="#">Спецпредложения</a>
+              </li>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    
+    <section class="container promo">
+      <div class="promo-item">
+        <h3 class="promo-title">Материалы</h3>
+        <a class="btn" href="#">На любой вкус</a>
+      </div>
+      <div class="promo-item">
+        <h3 class="promo-title">Инструмент</h3>
+        <a class="btn" href="#">На все случаи</a>
+      </div>
+      <div class="promo-item">
+        <h3 class="promo-title">Техника</h3>
+        <a class="btn" href="#">Для стройки</a>
+      </div>
+      <div class="slider promo-item-main">
+        <h3 class="promo-title-main">Перфораторы</h3>
+        <p>Настроящие мужские игрушки</p>
+        <button class="promo-prev" type="button">&#60;</button>
+        <button class="promo-next" type="button">&#62;</button>
+        <a class="btn" href="#">Открыть каталог</a>
+      </div>
+      <div class="promo-item">
+        <h3 class="promo-title">Скидки 50%</h3>
+        <a class="btn" href="#">На 750 товаров</a>
+      </div>
+      <div class="promo-item">
+        <h3 class="promo-title">Доставка</h3>
+        <a class="btn" href="#">Бесплатно</a>
+      </div>
+    </section>
+      
+    <section class="container popular-products">
+      <div class="popular-header">
+        <h2 class="section-title">Популярные товары:</h2>
+        <a class="btn" href="#">Все популярные товары</a>
+      </div>
+      <section class="popular-products-catalog">
+        <article class="popular-products-item">
+          <a href="#"><img src="http://placehold.it/184x163" width="184" height="163" alt="BOSCH BFG 9000"></a>
+          <p>Перфоратор BOSCH<br>
+          BFG 9000</p>
+          <span class="old-price">32500 Р.</span>
+          <a class="btn price-btn" href="#">25500 Р.</a>
+        </article>
+        <article class="popular-products-item">
+          <a href="#"><img src="http://placehold.it/126x112" width="126" height="112" alt="BOSCH BFG 3000"></a>
+          <p>Перфоратор BOSCH<br>
+          BFG 3000</p>
+          <span class="old-price">22500 Р.</span>
+          <a class="btn price-btn" href="#">15500 Р.</a>
+        </article>
+        <article class="popular-products-item">
+          <a href="#"><img src="http://placehold.it/144x128" width="144" height="128" alt="BOSCH BFG 6000"></a>
+          <p>Перфоратор BOSCH<br>
+          BFG 6000</p>
+          <span class="old-price">30500 Р.</span>
+          <a class="btn price-btn" href="#">25500 Р.</a>
+        </article>
+        <article class="popular-products-item">
+          <a href="#"><img src="http://placehold.it/126x112" width="126" height="112" alt="BOSCH BFG 2000"></a>
+          <p>Перфоратор BOSCH<br>
+          BFG 2000</p>
+          <a class="btn price-btn" href="#">12500 Р.</a>
+        </article>
+      </section>
+    </section>
+      
+    <section class="container popular-brands">
+      <div class="popular-header">
+        <h2 class="section-title">Популярные производители:</h2>
+        <a class="btn" href="#">Все производители</a>
+      </div>
+      <section class="popular-brands-images">
+        <a class="brand-btn"><img src="http://placehold.it/126x37" width="126" height="37" alt="BOSCH"></a>
+        <a class="brand-btn"><img src="http://placehold.it/123x40" width="123" height="40" alt="Makita"></a>
+        <a class="brand-btn"><img src="http://placehold.it/146x44" width="146" height="44" alt="DeWALT"></a>
+        <a class="brand-btn"><img src="http://placehold.it/200x88" width="200" height="88" alt="ИнтерскОл"></a>
+        <a class="brand-btn"><img src="http://placehold.it/169x31" width="169" height="31" alt="HITACHI"></a>
+        <a class="brand-btn"><img src="http://placehold.it/121x73" width="121" height="73" alt="LG"></a>
+        <a class="brand-btn"><img src="http://placehold.it/151x96" width="151" height="96" alt="AEG"></a>
+        <a class="brand-btn"><img src="http://placehold.it/204x69" width="204" height="69" alt="metabo"></a>
+      </section>
+    </section>
+      
+    <section class="service">
+      <div class="container">
+        <h2 class="section-title">Сервисы</h2>
+        <p>Хороший интернет-магазин отличается от&nbsp;плохого не&nbsp;только ценами!<br>
+          Мы стараемся изо&nbsp;всех&nbsp;сил, чтобы сделать ваши покупки приятными.</p>
+        <section class="service-about">
+          <section class="service-list">
+            <ul>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Кредит</a></li>
+            </ul>
+          </section>
+          <section class="service-item">
+            <h3 class="service-title">Доставка</h3>
+            <p>Мы с&nbsp;удовольствием доставим ваш&nbsp;товар прямо 
+              к&nbsp;вашему&nbsp;подъезду совершенно бесплатно!
+              Ведь мы неплохо заработаем, 
+              поднимая его на&nbsp;ваш&nbsp;этаж!</p>
+          </section>
+        </section>
+      </div>
+    </section>
+      
+    <section class="container company-info">
+      <article class="company-about">
+        <h2 class="section-title">Компания «Техномарт»</h2>
+        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для&nbsp;ремонта и&nbsp;строительства не&nbsp;оставит равнодушными любителей сэкномить на&nbsp;гастарбайтерах.</p>
+        <p>Мы можем доставить ваш&nbsp;товар в&nbsp;самые отдаленные точки России!
+          Техномарт работает со&nbsp;многими транспортными компаниями: </p>
+        <ul class="transport-companies">
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+      </article>
+      <article class="company-contacts">
+        <h2 class="section-title">Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в&nbsp;наш офис:</p>
+        <a class="map-click" href="#"><img src="http://placehold.it/300x158" width="300" height="158" alt="company-map"></a>
+        <a class="btn" href="#">Заблудились? Напишите&nbsp;нам!</a>
+      </article>
+    </section>
+      
+    <footer class="main-footer">
+      <div class="main-footer-top">
+        <div class="container">
+          <a class="logo">Техномарт</a>
+          <nav class="main-navigation">
+            <ul>
+              <li>
+                <a href="#">Компания</a>
+              </li>
+              <li>
+                <a href="#">Новости</a>
+              </li>
+              <li>
+                <a href="#">Каталог</a>
+              </li>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="main-footer-middle">
+        <div class="container">
+          <p class="main-footer-contacts">г. Санкт-Петербург, ул.&nbsp;Б.&nbsp;Конюшенная, д.&nbsp;19/8<br>
+            +7&nbsp;(812)&nbsp;555-05-55</p>
+        </div>
+        <nav class="second-navigation">
+          <ul>
+            <li>
+              <a href="#">Материалы</a>
+            </li>
+            <li>
+              <a href="#">Техника</a>
+            </li>
+            <li>
+              <a href="#">Инструмент</a>
+            </li>
+            <li>
+              <a href="#">Спецпредложения</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-footer-bottom">
+        <p>&#169; 2010–2017 Компания «Техномарт»<br>
+          Все права защищены</p>
+        <section class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-mail">
+          <span>Обратная связь:</span>
+          <a class="link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </section>
+        <section class="footer-copyright">
+          <span>Разработано - </span>
+          <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
