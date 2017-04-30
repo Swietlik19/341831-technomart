@@ -1,10 +1,53 @@
+html,
+body {
+  min-width: 1122px;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+}
+
 body {
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", "Arial", sans-serif;
-  }
+  
+  background-color: #559999;  /*УБРАТЬ!!!*/
+}
+  
+.main-header-top {
+  background-color: #999999;  /*УБРАТЬ!!!*/
+}
+  
+.main-header-bottom {
+  background-color: #111111;  /*УБРАТЬ!!!*/
+}
+  
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  
+  background-color: #999955;  /*УБРАТЬ!!!*/
+}
+
+.main-header-top .container {
+  min-height: 40px;
+  display: flex;
+}
+
+.main-header-top .container a {
+  background-color: #559955;  /*УБРАТЬ!!!*/
+}
 
 .logo {
+  display: block;
+  flex-shrink: 0;
+  width: 220px;
+  margin-right: 10px;
+  
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
@@ -14,6 +57,91 @@ body {
   color: white;
 }
 
+.main-header-search {
+  flex-shrink: 0;
+  width: 240px;
+  margin-right: 10px;
+}
+
+.main-header-bookmarks {
+  flex-shrink: 0;
+  display: block;
+  width: 140px;
+  margin-right: 20px;
+}
+
+.main-header-cart {
+  flex-shrink: 0;
+  display: block;
+  width: 140px;
+  margin-right: 10px;
+}
+
+.main-header .order-btn {
+  flex-shrink: 0;
+  display: block;
+  width: 150px;
+}
+
+.main-header-bottom .container a,
+.main-header-bottom .container div,
+.main-header-bottom .container p {
+  background-color: #559955;  /*УБРАТЬ!!!*/
+}
+
+.main-header-bottom {
+  padding-bottom: 60px;
+}
+
+.main-header-middle {
+  display: flex;
+  padding-top: 49px;
+  padding-bottom: 40px;
+}
+
+.main-header-about {
+  flex-shrink: 0;
+  width: 200px;
+  padding: 0 50px;
+  margin-right: 20px;
+  
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  color: #ee3643;
+}
+
+.main-header-contacts {
+  flex-shrink: 0;
+  width: 300px;
+  margin-right: 20px;
+}
+
+.user-block {
+  flex-shrink: 0;
+  width: 300px;
+}
+
+.promo {
+  padding-top: 60px;
+  padding-bottom: 53px;
+}
+
+.promo-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.promo-item {
+  flex-shrink: 0;
+  width: 300px;
+  height: 123px;
+  
+  background-color: red;  /*УБРАТЬ!!!*/
+}
+
 .promo-title {
   font-size: 24px;
   line-height: 30px;
@@ -21,13 +149,96 @@ body {
   color: white;
 }
 
+.promo-bottom {
+  display: flex;
+}
+
+.promo-items-bottom {
+  flex-shrink: 0;
+}
+
+.promo-bottom .promo-item {
+  margin-bottom: 20px;
+}
+
+.promo-slider {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.promo-slide {
+  width: 620px;
+  height: 266px;
+  
+  background-color: red;  /*УБРАТЬ!!!*/
+}
+
+.promo-slide:nth-child(2) {
+  display: none;
+}
+
+.popular {
+  margin-bottom: 21px;
+}
+
+.popular-header {
+  display: flex;
+  justify-content: space-between;
+  height: 38px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-top: 25px;
+  padding-right: 24px;
+  padding-bottom: 26px;
+  
+  background-color: red;  /*УБРАТЬ!!!*/
+}
+  
+.popular-header .btn {
+  flex-shrink: 0;
+  display: block;
+  width: 253px;
+  height: 38px;
+}
+
 .products-title {
+  flex-shrink: 0;
+  width: 540px;
+  
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
   font-family: "Cuprum", "Arial", sans-serif;
   text-transform: uppercase;
   color: #32425c;
+}
+
+.card {
+  flex-shrink: 0;
+  width: 220px;
+  height: 318px;
+}
+
+.brand-btn {
+  display: block;
+  height: 145px;
+  
+  background-color: red;  /*УБРАТЬ!!!*/
+}
+
+.brand-btn:first-child {
+  margin-bottom: 20px;
+}
+
+.popular-brands {
+  margin-bottom: 0;
+  padding-bottom: 85px;  
+}
+
+.popular-catalog {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .section-title {
@@ -37,4 +248,196 @@ body {
   font-family: "Cuprum", "Arial", sans-serif;
   text-transform: uppercase;
   color: #000000;
+}
+
+.service .container {
+  padding-top: 67px;
+  padding-bottom: 102px;
+}
+
+.service .section-title {
+  padding-bottom: 31px;
+}
+
+.service-about {
+  display: flex;
+  margin-top: 68px;
+}
+
+.service-slider-btn {
+  display: block;
+  width: 240px;
+  height: 61px;
+}
+
+.service-slider-nav {
+  flex-shrink: 0;
+  margin-right: 80px;
+}
+
+.service-slides {
+  flex-shrink: 0;
+}
+
+.service-title {
+  width: 160px;
+  margin-bottom: 36px;
+}
+
+.service-slide {
+  width: 380px;
+}
+
+.service-slide:nth-child(2) {
+  display: none;
+}
+
+.service-slide:nth-child(3) {
+  display: none;
+}
+
+.company-info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 86px;
+}
+
+.company-info .section-title {
+  margin-bottom: 30px;
+}
+
+.company-info p {
+  margin-bottom: 24px;
+}
+
+.company-about {
+  flex-shrink: 0;
+  width: 560px;
+}
+
+.company-contacts {
+  flex-shrink: 0;
+  width: 300px;
+}
+
+.main-footer {
+  background-color: black;  /*УБРАТЬ!!!*/
+}
+
+.main-footer .logo {
+  flex-shrink: 0;
+  width: 220px;
+  height: 65px;
+}
+
+.main-footer .main-navigation {
+  flex-shrink: 0;
+  width: 620px;
+}
+
+.main-footer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.main-footer-contacts {
+  flex-shrink: 0;
+  width: 350px;
+}
+
+.second-navigation {
+  flex-shrink: 0;
+  width: 560px;
+}
+
+.main-footer-middle {
+  display: flex;
+  padding-bottom: 48px;
+}
+
+.main-footer-bottom .container {
+  display: flex;
+  padding-top: 38px;
+}
+
+.main-footer-bottom p {
+  flex-shrink: 0;
+  width: 320px;
+  margin-right: 60px;
+}
+
+.footer-social {
+  flex-shrink: 0;
+  width: 180px;
+  margin-right: 80px;
+}
+
+.footer-mail {
+  flex-shrink: 0;
+  width: 150px;
+  margin-right: 10px;
+}
+
+.footer-copyright {
+  flex-shrink: 0;
+  width: 140px;
+}
+
+/*catalog.html*/
+.products {
+  padding-top: 18px;
+  padding-bottom: 60px;
+}
+
+.breadcrumbs {
+  margin-bottom: 18px;
+}
+
+.products .products-title {
+  height: 89px;
+  margin-bottom: 20px;
+  
+  background-color: red;  /*УБРАТЬ!!!*/
+}
+
+.filters-form {
+  width: 220px;
+}
+
+.catalog {
+  width: 700px;
+}
+
+.products-catalog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-item {
+  width: 220px;
+  height: 318px;
+  margin-bottom: 20px;
+}
+
+.catalog-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.catalog-item:last-of-type {
+  margin-bottom: 52px;
+}
+
+.product-about .container {
+  padding-top: 64px;
+  padding-bottom: 70px;
+  
+  background-color: cyan;  /*УБРАТЬ!!!*/
+}
+
+.product-about .section-title {
+  margin-bottom: 30px;
 }
