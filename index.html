@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -12,7 +14,7 @@
         <div class="container">
           <a class="logo">Техномарт</a>
           <form class="main-header-search" action="https://echo.htmlacademy.ru" method="post">
-            <input type="search" name="search" id="search-id" placeholder="Поиск:">
+            <input class="search-input" type="search" name="search" id="search-id" placeholder="Поиск:">
           </form>
           <a class="main-header-bookmarks" href="#">Закладки: 0</a>
           <a class="main-header-cart" href="#">Корзина: 0</a>
@@ -28,7 +30,7 @@
               <p class="main-header-address">г. Санкт-Петербург, ул.&nbsp;Б.&nbsp;Конюшенная, д.&nbsp;19/8</p>
             </div>
             <div class="user-block">
-              <a class="sign-in" href="#">Вход</a>
+              <a class="sign-in" href="#">Войти</a>
               <a class="sign-up" href="#">Регистрация</a>
             </div>
           </div>
@@ -89,10 +91,12 @@
               <p>Соседям на радость!</p>
               <a class="btn" href="#">Открыть каталог</a>
             </div>
-            <div class="promo-slider-nav">
-              <button class="promo-prev" type="button">Назад</button>
-              <button class="promo-next" type="button">Вперед</button>
-            </div>
+          </div>
+          <div class="promo-slider-nav">
+            <button class="promo-prev" type="button"></button>
+            <button class="promo-next" type="button"></button>
+            <span class="slider-indicator-left"></span>
+            <span class="slider-indicator-right"></span>
           </div>
         </div>
         <div class="promo-items-bottom">
@@ -164,27 +168,31 @@
           Мы стараемся изо&nbsp;всех&nbsp;сил, чтобы сделать ваши покупки приятными.</p>
         <section class="service-about">
           <div class="service-slider-nav">
-            <button class="service-slider-btn" type="button">Доставка</button>
+            <button class="service-slider-btn active" type="button">Доставка</button>
             <button class="service-slider-btn" type="button">Гарантия</button>
             <button class="service-slider-btn" type="button">Кредит</button>
           </div>
           <div class="service-slides">
             <div class="service-slide">
               <h3 class="service-title">Доставка</h3>
-              <p>Мы с&nbsp;удовольствием доставим ваш&nbsp;товар прямо 
-                к&nbsp;вашему&nbsp;подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем, 
+              <!--Ширина в макете для абзацев разных слайдах разная и внутри каждого слайда отличается от строки к строке,
+              поэтому был использован тег br -->
+              <p>Мы с&nbsp;удовольствием доставим ваш&nbsp;товар прямо <br>
+                к&nbsp;вашему&nbsp;подъезду совершенно бесплатно!<br>
+                Ведь мы неплохо заработаем, <br>
                 поднимая его на&nbsp;ваш&nbsp;этаж!</p>
             </div>
             <div class="service-slide">
               <h3 class="service-title">Гарантия</h3>
-              <p>Если купленный у&nbsp;нас товар поломается или&nbsp;заискрит, а&nbsp;также в&nbsp;случае пожара, спровоцированного его возгаранием,
-                вы&nbsp;всегда можете быть уверены в&nbsp;нашей гарантии. Мы обменяем сгоревший товар на&nbsp;новый. 
+              <p>Если купленный у&nbsp;нас товар поломается или&nbsp;заискрит,<br>
+                а&nbsp;также в&nbsp;случае пожара, спровоцированного его возгаранием,<br>
+                вы&nbsp;всегда можете быть уверены в&nbsp;нашей гарантии. Мы обменяем <br>
+                сгоревший товар на&nbsp;новый. <br>
                 Дом уж восстановите как-нибудь&nbsp;сами.</p>
             </div>
             <div class="service-slide">
               <h3 class="service-title">Кредит</h3>
-              <p>Залезть в&nbsp;долговую яму стало проще! 
+              <p>Залезть в&nbsp;долговую яму стало проще! <br>
                 Кредитные консультанты придут вам на&nbsp;помощь.</p>
             </div>
           </div>
@@ -195,7 +203,7 @@
     <section class="container company-info">
       <article class="company-about">
         <h2 class="section-title">Компания «Техномарт»</h2>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для&nbsp;ремонта и&nbsp;строительства не&nbsp;оставит равнодушными любителей сэкномить на&nbsp;гастарбайтерах.</p>
+        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для&nbsp;ремонта и строительства не&nbsp;оставит равнодушными любителей сэкономить на&nbsp;гастарбайтерах.</p>
         <p>Мы можем доставить ваш&nbsp;товар в&nbsp;самые отдаленные точки России!
           Техномарт работает со&nbsp;многими транспортными компаниями: </p>
         <ul class="transport-companies">
@@ -271,7 +279,7 @@
           </div>
           <div class="footer-copyright">
             <span>Разработано - </span>
-            <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+            <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </div>
         </div>
       </div>
