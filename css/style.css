@@ -306,8 +306,10 @@ body {
   margin-right: 70px;
 }
 
-.main-header-phone {
+a.main-header-phone {
   position: relative;
+  
+  display: block;
   
   margin-bottom: 4px;
   padding-left: 71px;
@@ -319,6 +321,15 @@ body {
   color: #ee3643;
   
   border: 3px solid white;
+  
+  cursor: pointer;
+}
+
+a.main-header-phone:hover {
+  color: #ca2c37;
+}
+a.main-header-phone:active {
+  color: #ba2732;
 }
 
 .main-header-phone::before {
@@ -434,7 +445,7 @@ body {
 }
 
 .sign-in:hover::before {
-  background-position: -204px -145px;
+  background-position: -203px -145px;
 }
 
 .sign-out:hover::before {
@@ -560,7 +571,8 @@ body {
   padding-right: 32px;
 }
 
-.main-header .main-navigation a:hover {
+.main-header .main-navigation a[href]:hover,
+.main-header .main-navigation .active {
   background-color: #293449;
 }
 
