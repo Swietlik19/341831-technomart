@@ -17,13 +17,13 @@
             <input class="search-input" type="search" name="search" id="search-id" placeholder="Поиск:">
           </form>
           <a class="main-header-bookmarks" href="#">Закладки: 0</a>
-          <a class="main-header-cart" href="#">Корзина: 0</a>
+          <a class="main-header-cart not-empty" href="#">Корзина: 10</a>
           <a class="btn order-btn" href="#">Оформить заказ</a>
         </div>
       </div>
       <div class="main-header-bottom">
         <div class="container">
-          <div class="main-header-middle">
+          <div class="main-header-middle middle-catalog">
             <p class="main-header-about">Интернет-магазин строительных материалов и&nbsp;инструментов для&nbsp;ремонта</p>
             <div class="main-header-contacts">
               <p class="main-header-phone">+7&nbsp;(812)&nbsp;555-05-55</p>
@@ -34,7 +34,7 @@
                 <a class="profile-btn" href="#">Равшан Джамшутович</a>
                 <a class="sign-out" href="#">Выход</a>
               </div>
-              <div class="user-presonal-buttons">
+              <div class="user-personal-buttons">
                 <a class="user-orders" href="#">Мои заказы</a>
                 <a class="user-pesonal" href="#">Личный кабинет</a>
               </div>
@@ -71,29 +71,27 @@
     
     <div class="container products">
       <div class="breadcrumbs">
-        <a href="#">Главная</a>
-        &#62;
+        <a href="index.html">Главная</a>
         <a href="#">Каталог</a>
-        &#62;
         <a href="#">Инструмент</a>
-        &#62;
         <a>Перфораторы</a>
       </div>
       <h1 class="products-title-main">Перфораторы</h1>
       <div class="products-catalog">
         <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
           <span class="products-catalog-title">Фильтр:</span>
-          <fieldset>
+          <fieldset class="price-filter">
             <legend class="form-title">Цена: </legend>
             <div class="price-filter">
-              <input type="range" min="1" max="40000" step="1" name="price-range">
-              <input type="text" name="price-first" id="price-first-id">
-              <span class="form-dash">-</span>
-              <input type="text" name="price-last" id="price-last-id">
+              <div class="filter-range">
+                <input class="price-range" type="range" min="1" max="40000" step="1" name="price-range">
+              </div>
+              <input class="price-first" type="text" name="price-first" id="price-first-id" value="0">
+              <input class="price-last" type="text" name="price-last" id="price-last-id" value="30000">
             </div>
           </fieldset>
           
-          <fieldset>
+          <fieldset class="brands-filter">
             <legend class="form-title">Производители: </legend>
             <ul>
               <li>
@@ -119,7 +117,7 @@
             </ul>
           </fieldset>
           
-          <fieldset>
+          <fieldset class="power-filter">
             <legend class="form-title">Питание:</legend>
             <ul>
               <li>
@@ -138,11 +136,11 @@
         <section class="catalog">
           <div class="sorting">
             <span class="products-catalog-title">Сортировка:</span>
-            <a class="sorting-options">По цене</a>
+            <a class="sorting-options active">По цене</a>
             <a class="sorting-options">По типу</a>
             <a class="sorting-options">По функционалу</a>
-            <span class="sotring-btn-asc">По возрастанию</span>
-            <span class="sotring-btn-desc">По убыванию</span>
+            <span class="sorting-btn-asc active"></span>
+            <span class="sorting-btn-desc"></span>
           </div>
           <div class="catalog-items">
             <article class="card catalog-item">
@@ -161,7 +159,7 @@
               <span class="old-price">30500 Р.</span>
               <span class="current-price">25500 Р.</span>
             </article>
-            <article class="card catalog-item">
+            <article class="card catalog-item flag">
               <!--<a class="btn order-btn">Купить</a>
               <a class="btn bookmarks-btn">В закладки</a>
               <h2 class="product-title">Перфоратор BOSCH BFG 2000</h2>
@@ -180,7 +178,7 @@
               <span class="old-price">22500 Р.</span>
               <span class="current-price">15500 Р.</span>
             </article>
-            <article class="card catalog-item">
+            <article class="card catalog-item flag">
               <div class="catalog-item-image">
                 <img src="img/BOSCH-BFG-6000.png" width="218" height="166" alt="BOSCH BFG 6000">
               </div>
@@ -195,7 +193,7 @@
               <h2 class="product-title">Перфоратор BOSCH BFG 2000</h2>
               <span class="current-price">12500 Р.</span>
             </article>
-            <article class="card catalog-item">
+            <article class="card catalog-item flag">
               <div class="catalog-item-image">
                 <img src="img/BOSCH-BFG-3000.png" width="218" height="166" alt="BOSCH BFG 3000">
               </div>
@@ -218,12 +216,12 @@
               <h2 class="product-title">Перфоратор BOSCH BFG 2000</h2>
               <span class="current-price">12500 Р.</span>
             </article>
-            <div class="paginator">
-              <a class="btn">1</a>
+          </div>
+          <div class="paginator">
+              <a class="btn active">1</a>
               <a class="btn" href="#2">2</a>
               <a class="btn" href="#3">3</a>
               <a class="btn" href="#next">Следующая</a>
-            </div>
           </div>
         </section>
       </div>
