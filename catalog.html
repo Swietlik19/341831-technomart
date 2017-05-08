@@ -82,11 +82,16 @@
           <span class="products-catalog-title">Фильтр:</span>
           <fieldset class="price-filter">
             <legend class="form-title">Цена: </legend>
-            <div class="price-filter">
+            <div class="price-controls">
               <div class="filter-range">
-                <input class="price-range" type="range" min="1" max="40000" step="1" name="price-range">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
               </div>
               <input class="price-first" type="text" name="price-first" id="price-first-id" value="0">
+              <span class="price-dash">-</span>
               <input class="price-last" type="text" name="price-last" id="price-last-id" value="30000">
             </div>
           </fieldset>
@@ -144,6 +149,10 @@
           </div>
           <div class="catalog-items">
             <article class="card catalog-item">
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <div class="catalog-item-image">
                 <img src="img/BOSCH-BFG-3000.png" width="218" height="166" alt="BOSCH BFG 3000">
               </div>
@@ -152,6 +161,10 @@
               <span class="current-price">15500 Р.</span>
             </article>
             <article class="card catalog-item">
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <div class="catalog-item-image">
                 <img src="img/BOSCH-BFG-6000.png" width="218" height="166" alt="BOSCH BFG 6000">
               </div>
@@ -159,18 +172,23 @@
               <span class="old-price">30500 Р.</span>
               <span class="current-price">25500 Р.</span>
             </article>
-            <article class="card catalog-item flag">
-              <!--<a class="btn order-btn">Купить</a>
-              <a class="btn bookmarks-btn">В закладки</a>
-              <h2 class="product-title">Перфоратор BOSCH BFG 2000</h2>
-              <span class="current-price">12500 Р.</span>-->
+            <article class="card catalog-item flag-new">
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <div class="catalog-item-image">
                 <img src="img/BOSCH-BFG-2000.png" width="218" height="166" alt="BOSCH BFG 2000">
               </div>
               <h2 class="product-title">Перфоратор BOSCH BFG 2000</h2>
+              <span class="old-price"></span>
               <span class="current-price">12500 Р.</span>
             </article>
             <article class="card catalog-item">
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <div class="catalog-item-image">
                 <img src="img/BOSCH-BFG-3000.png" width="218" height="166" alt="BOSCH BFG 3000">
               </div>
@@ -178,7 +196,11 @@
               <span class="old-price">22500 Р.</span>
               <span class="current-price">15500 Р.</span>
             </article>
-            <article class="card catalog-item flag">
+            <article class="card catalog-item flag-new">
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <div class="catalog-item-image">
                 <img src="img/BOSCH-BFG-6000.png" width="218" height="166" alt="BOSCH BFG 6000">
               </div>
@@ -187,13 +209,22 @@
               <span class="current-price">25500 Р.</span>
             </article>
             <article class="card catalog-item">
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <div class="catalog-item-image">
                 <img src="img/BOSCH-BFG-2000.png" width="218" height="166" alt="BOSCH BFG 2000">
               </div>
               <h2 class="product-title">Перфоратор BOSCH BFG 2000</h2>
+              <span class="old-price"></span>
               <span class="current-price">12500 Р.</span>
             </article>
-            <article class="card catalog-item flag">
+            <article class="card catalog-item flag-new">
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <div class="catalog-item-image">
                 <img src="img/BOSCH-BFG-3000.png" width="218" height="166" alt="BOSCH BFG 3000">
               </div>
@@ -202,6 +233,10 @@
               <span class="current-price">15500 Р.</span>
             </article>
             <article class="card catalog-item">
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <div class="catalog-item-image">
                 <img src="img/BOSCH-BFG-6000.png" width="218" height="166" alt="BOSCH BFG 6000">
               </div>
@@ -210,10 +245,15 @@
               <span class="current-price">25500 Р.</span>
             </article>
             <article class="card catalog-item">
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <div class="catalog-item-image">
                 <img src="img/BOSCH-BFG-2000.png" width="218" height="166" alt="BOSCH BFG 2000">
               </div>
               <h2 class="product-title">Перфоратор BOSCH BFG 2000</h2>
+              <span class="old-price"></span>
               <span class="current-price">12500 Р.</span>
             </article>
           </div>
@@ -299,5 +339,17 @@
         </div>
       </div>
     </footer>
+    
+    <div class="modal-cart">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="cart-form" action="#" method="post">
+        <p class="modal-cart-top">Товар добавлен в корзину!</p>
+        <div class="modal-cart-footer">
+          <button class="btn active" type="submit">Оформить заказ</button>
+          <button class="btn" type="submit">Продолжить покупки</button>
+        </div>
+      </form>
+    </div>
+    
   </body>
 </html>

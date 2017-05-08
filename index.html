@@ -119,26 +119,43 @@
       </div>
       <section class="popular-catalog">
         <article class="card popular-products-item">
+          <div class="actions">
+            <a href="#" class="buy">Купить</a>
+            <a href="#" class="bookmark">В закладки</a>
+          </div>
           <img src="img/BOSCH-BFG-9000.png" width="218" height="166" alt="BOSCH BFG 9000">
           <p>Перфоратор BOSCH BFG 9000</p>
           <span class="old-price">32500 Р.</span>
           <span class="current-price">25500 Р.</span>
         </article>
         <article class="card popular-products-item">
+          <div class="actions">
+            <a href="#" class="buy">Купить</a>
+            <a href="#" class="bookmark">В закладки</a>
+          </div>
           <img src="img/BOSCH-BFG-3000.png" width="218" height="166" alt="BOSCH BFG 3000">
           <p>Перфоратор BOSCH BFG 3000</p>
           <span class="old-price">22500 Р.</span>
           <span class="current-price">15500 Р.</span>
         </article>
         <article class="card popular-products-item">
+          <div class="actions">
+            <a href="#" class="buy">Купить</a>
+            <a href="#" class="bookmark">В закладки</a>
+          </div>
           <img src="img/BOSCH-BFG-6000.png" width="218" height="166" alt="BOSCH BFG 6000">
           <p>Перфоратор BOSCH BFG 6000</p>
           <span class="old-price">30500 Р.</span>
           <span class="current-price">25500 Р.</span>
         </article>
         <article class="card popular-products-item">
+          <div class="actions">
+            <a href="#" class="buy">Купить</a>
+            <a href="#" class="bookmark">В закладки</a>
+          </div>
           <img src="img/BOSCH-BFG-2000.png" width="218" height="166" alt="BOSCH BFG 2000">
           <p>Перфоратор BOSCH BFG 2000</p>
+          <span class="old-price"></span>
           <span class="current-price">12500 Р.</span>
         </article>
       </section>
@@ -284,5 +301,31 @@
         </div>
       </div>
     </footer>
+    
+    <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="write-us-form" action="#" method="post">
+        <div class="modal-content-top">
+          <div class="modal-flex-container">
+            <label class="write-us-label" for="name">Ваше имя:<br>
+              <input class="write-us-name" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+            </label>
+            <label class="write-us-label" for="email">Ваш e-mail:<br>
+              <input class="write-us-email" type="email" name="email" id="email" placeholder="Для отправки ответа">
+            </label>
+          </div>
+          <label class="write-us-label">Текст письма:<br>
+          <textarea class="write-us-text" name="letter-text" id="letter-text-id" placeholder="В свободной форме"></textarea></label>
+        </div>
+        <div class="modal-content-footer">
+          <button class="btn" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+    <div class="modal-content-map">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <div id="yandex-map"></div>
+    </div>
+    
   </body>
 </html>
