@@ -2195,7 +2195,7 @@ fieldset.price-filter {
   
   vertical-align: middle;
   
-  background: white url("../img/spritesheet.png") no-repeat -57px -5px;
+  background: white url("../img/spritesheet.png") no-repeat -56px -5px;
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -2205,16 +2205,16 @@ fieldset.price-filter {
   width: 27px;
   height: 23px;
   
-  background: white url("../img/spritesheet.png") no-repeat -90px -5px;
+  background: white url("../img/spritesheet.png") no-repeat -89px -5px;
   border: none;
 }
 
 .brands-filter input[type="checkbox"]:hover + label::before {
-  background: white url("../img/spritesheet.png") no-repeat -99px -42px;
+  background: white url("../img/spritesheet.png") no-repeat -98px -42px;
 }
 
 .brands-filter input[type="checkbox"]:checked:hover + label::before {
-  background: white url("../img/spritesheet.png") no-repeat -252px -75px;
+  background: white url("../img/spritesheet.png") no-repeat -251px -75px;
 }
 
 .power-filter .form-title {
